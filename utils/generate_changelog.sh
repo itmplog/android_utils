@@ -18,5 +18,5 @@ fi
 cd $REPO
 repo forall -c 'L=$(git lg --since 1day ); if [ "n$L" != "n" ]; then echo; echo "   * $REPO_PATH"; git lg --since 1day ; fi' |tee $LOGDIR/lg.log
 
-cat $LOGDIR/lg.log | ansi2txt > $LOGDIR/$CHANGELOG.txt
+cat $LOGDIR/lg.log | ansi2txt | nl > $LOGDIR/$CHANGELOG.txt
 cat $LOGDIR/lg.log | ansi2html > $LOGDIR/$CHANGELOG.html
