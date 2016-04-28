@@ -5,8 +5,8 @@
 # Need ansi2txt & ansi from [KBtin MUD client ](https://github.com/kilobyte/kbtin)
 ##
 
-REPO=/build/src
-LOGDIR=/build/logs
+REPO=/build/cm
+LOGDIR=/build/cm/logs
 DATE=$(date "+%Y-%m-%d")
 CHANGELOG=change-$DATE
 
